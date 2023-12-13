@@ -1,6 +1,8 @@
 import gsap from "gsap";
 
+import  CSSPlugin  from 'gsap/all'
 
+gsap.registerPlugin(CSSPlugin)
 //Question: how is progress animation working --> 
 //How is the timing of both animations calculated working together
 
@@ -30,12 +32,12 @@ export const progressAnimation = (progressRef, progressNumberRef) => { //use for
 	"<"
 	).to(progressNumberRef.current,{
 		textContent: 100,
-		duration: 5,
+		duration: 5.5,
 		roundProps: "textContent",
 	},
 	"<").to(progressRef.current,{
 		y: 24,
-		autoalpha: 0,
+		autoAlpha: 0,
 	})
 	return tl;
 }

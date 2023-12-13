@@ -24,10 +24,10 @@ export default function Loader({timeline})
 		  <div  className={styles.loader__progress} ref={progressRef}></div>
 		  <span className={styles.loader__progressNumber} ref={progressNumberRef}>0</span>
 		</div>
-		<div className={styles.loader} ref={loaderRef}>
+		<div className={styles.loader} ref={loaderRef}> {/* wrapper for all the words */}
 		  <div className={styles.loader__words}>
 			<div className={styles.loader__overlay}></div>
-			<div className={styles.loader__wordsGroup}  ref={wordGroupRef}>
+			<div ref={wordGroupRef}>
 			  {words.map((word, index) => { //creating a span for every word in the array
 				return (
 				  <span key={index} className={styles.loader__word}>

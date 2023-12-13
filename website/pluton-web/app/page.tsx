@@ -22,7 +22,8 @@ export default function Home() {
 
   return (
 	<main className={styles.main}>
-		{ loading ? `console.log("done")` : <Loader timeline={timeline}/>}  {/*pass the timeline as a values to loader component */}
+		{/* { loading ? `console.log("done")` : <Loader timeline={timeline}/>}  pass the timeline as a values to loader component */}
+		<Loader timeline={timeline}/>
 	</main>
   )
 }

@@ -5,9 +5,9 @@
 	width: 100%;
   
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	justify-content: center; //aligns everything in the center
+	align-items: center; //align-items center
+	flex-direction: column; //this to make everything put in a column
 	background-color: white;
 	overflow: hidden;
 	z-index: 2;
@@ -23,15 +23,15 @@
   
 	&__words {
 	  position: relative;
-	  overflow: hidden;
-	  height: 41.8rem;
+	  overflow: hidden; //anything outside out of the view is not put
+	  height: 418px; //this is the height of the loader
 	}
   
 	&__overlay {
 	  position: absolute;
 	  inset: 0;
-	  height: 100%;
-	  z-index: 2;
+	  height: 100%; //it is the height of the whole element. 
+	  z-index: 2; //put the overlay above the words
 	  background: linear-gradient(
 		to bottom,
 		rgba(255, 255, 255, 0.9),
@@ -47,7 +47,7 @@
   
 	&__word {
 	  display: block;
-	  font-size: 3.2rem;
+	  font-size: 32px;
 	}
   
 	&__progressWrapper {
@@ -58,7 +58,7 @@
 	  width: 100%;
 	  z-index: 3;
 	}
-  
+
 	&__progress {
 	  height: 100%;
 	  width: 100%;
@@ -69,13 +69,13 @@
   
 	&__progressNumber {
 	  position: absolute;
-	  left: -5vw;
+	  left: -60px; //this is to move the number to the left
 	  top: 50%;
 	  transform: translateY(-50%);
-	  z-index: 4;
+	  z-index: 4; //this is to set it above the all elements
 	  white-space: nowrap;
 	  color: white;
-	  font-size: 3.2rem;
+	  font-size: 32px;
 	}
   }
   
