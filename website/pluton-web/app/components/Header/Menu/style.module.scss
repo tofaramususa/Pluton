@@ -1,0 +1,23 @@
+$--menu-width: 480;
+$--menu-width: 650;
+
+@media (max-width: var(--menu-width)) 
+{
+		$--menu-width: calc(100% - 2rem);
+}
+
+.header {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+.menu {
+	height: var(--menu-height);
+	width: var(--menu-width);
+	background-color: hsl(79, 75%, 58%);
+	position: relative;
+	border-radius: 25px;
+	max-width: 480px;
+	max-height: 300px;
+}
