@@ -1,5 +1,7 @@
 'use client' //to prevent errors and specify when we are using hooks and has to be rendered lclietnet side
-import { React, useState } from 'react';
+
+import { React } from 'react';
+import { useState } from 'react';
 import Button from './Button';
 import styles from './style.module.scss';
 import Nav from './Nav';
@@ -24,7 +26,7 @@ const variants = {
 	}
 }
 
-export default function index () {
+export default function Index () {
 
 	const [isActive, setIsActive] = useState(false);
 	return (
@@ -35,8 +37,8 @@ export default function index () {
 				animate={isActive ? "open" : "closed"}
 				initial="closed"
 				>
-			<AnimatePresence> /* before exiting perform the exit animation */
-			{isActive && <Nav />} /*We have the nav component */
+			<AnimatePresence>
+			{isActive && <Nav />}
 			</AnimatePresence>
 			</motion.div>
 			< Button isActive={isActive} setIsActive={setIsActive}/>
