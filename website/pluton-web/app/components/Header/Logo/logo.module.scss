@@ -1,0 +1,15 @@
+.logo {
+	// width: max-content;
+	// height: max-content;
+	// border: 1px solid red;
+	top: 12px;
+	left: 15px;
+	// margin-top: 10px;
+	// margin-left: 15px;
+	position: fixed;
+	z-index: 2;
+	.text {
+		font-size: 48px;
+		text-transform:uppercase;
+	}	
+}

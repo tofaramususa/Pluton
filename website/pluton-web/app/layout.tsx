@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import localFont from "next/font/local";
 const ppNeue = localFont({ src: "../public/fonts/ppneue.woff2" });
 import './globals.css'
-import Header from './components/Header/Menu'
+import Header from './components/Header'
 
 
 export const metadata: Metadata = {

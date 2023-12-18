@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
 	<main className={styles.main}>
-		{ loading ? `` : <Loader timeline={timeline}/>}
+		{/* { loading ? `` : <Loader timeline={timeline}/>} */}
 	</main>
   )
 }
