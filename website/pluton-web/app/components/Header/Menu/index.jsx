@@ -30,7 +30,7 @@ export default function Index () {
 
 	const [isActive, setIsActive] = useState(false);
 	return (
-		<div className={styles.header}>
+		<div className={styles.menu_header}>
 			<motion.div 
 				className={styles.menu}
 				variants={variants}

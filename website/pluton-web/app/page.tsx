@@ -1,6 +1,8 @@
 "use client" // This file is client-side only because we are using hooks/
 import Loader from "./components/Loader"; //import the loader component
-import styles from "./page.module.scss"
+import Hero from "./components/Hero";
+import "@/styles/index.scss"
+import styles from "./page.module.scss";
 
 import { useLayoutEffect, useState } from "react"; //runs before the browser paints 
 import { gsap } from "gsap" // Import the Timeline type from gsap
@@ -22,7 +24,8 @@ export default function Home() {
 
   return (
 	<main className={styles.main}>
-		{ loading ? `` : <Loader timeline={timeline}/>}
+		{loading ? null : <Loader timeline={timeline}/>}
+		<Hero />
 	</main>
   )
 }

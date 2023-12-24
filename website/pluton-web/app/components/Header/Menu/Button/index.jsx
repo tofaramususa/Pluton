@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Button({isActive, setIsActive}) {
 	return (
-		<div onClick={() => setIsActive(!isActive)} className={styles.button}>
+		<div onClick={() => setIsActive(!isActive)} className={styles.menu_button}>
 			<motion.div 
 			className={styles.slider}
 			animate={{top: isActive ? "-100%" : "0"}} //is button active then animate the change to -100% else animate to 0
@@ -25,8 +25,8 @@ function PerspectiveText({label})
 {
 	return (
 		<div className={styles.perspectiveText}>
-			<p>{label}</p>
-			<p>{label}</p>
+			<p className="no-p-style">{label}</p>
+			<p className="no-p-style">{label}</p>
 		</div>
 	)
 }

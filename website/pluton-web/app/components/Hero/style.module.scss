@@ -1,0 +1,10 @@
+.hero {
+	// border: 1px solid green;
+	height: 90vh;
+}
+
+@media screen and (min-width: 749px) {
+	.hero {
+	  margin-top: -60px;
+	}
+  }
